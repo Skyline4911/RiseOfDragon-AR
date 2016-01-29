@@ -16,8 +16,8 @@ public class Player implements Serializable {
     
    
     //class instance variables
-    private String name;
-    private double bestTime;
+    String name;
+    double bestTime;
 
     public Player() {
     }
