@@ -11,8 +11,8 @@ import byui.cit260.curiousWorkmanship.model.Player;
  *
  * @author aaronrose
  */
-public class RiseofDragon {
-
+public class NewClass {
+    
     /**
      * @param args the command line arguments
      */
@@ -28,3 +28,5 @@ public class RiseofDragon {
     }
     
 }
+
+
