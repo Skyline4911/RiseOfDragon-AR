@@ -19,8 +19,8 @@ public class RiseofDragon {
     public static void main(String[] args) {
        Player playerOne = new Player();
        
-       playerOne.setName("Batman");
-       playerOne.setBestTime(7.00);
+       playerOne.setName("Aaron");
+       playerOne.setBestTime(10);
        
        String playerInfo = playerOne.toString();
        System.out.println(playerInfo);

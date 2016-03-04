@@ -5,13 +5,11 @@
  */
 package riseofdragon;
 
-import byui.cit260.curiousWorkmanship.model.Map;
-
 /**
  *
  * @author robertaustin
  */
-public class InventoryClass {
+public class DragonGameClass {
     
     /**
      * @param args the command line arguments
@@ -19,11 +17,11 @@ public class InventoryClass {
     public static void main(String[] args) {
        Game gameOne = new Game();
        
-       inventoryOne.setInventory("Batarang");
-       inventoryOne.setRequiredAmount(7.00);
+       gameOne.setGame("Arkham");
+       gameOne.setBestTime(7.00);
        
-       String inventoryInfo = inventoryOne.toString();
-       System.out.println(inventoryInfo);
+       String gameInfo = gameOne.toString();
+       System.out.println(gameInfo);
        
     }
     

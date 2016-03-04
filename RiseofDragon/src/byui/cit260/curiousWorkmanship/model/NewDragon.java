@@ -5,6 +5,7 @@
  */
 package byui.cit260.curiousWorkmanship.model;
 
+import byui.cit260.curiousWorkmanship.control.Dragon;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -17,6 +18,8 @@ public class NewDragon implements Serializable {
     //class instance variables
     private String description;
     private double maxCapacity;
+    private Object inventoryType;
+    private double requiredAmount;
 
     public NewDragon() {
     }
@@ -62,14 +65,10 @@ public class NewDragon implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Game other = (Dragon) obj;
+        final Dragon other = (Dragon) obj;
         if (Double.doubleToLongBits(this.maxCapacity) != Double.doubleToLongBits(other.maxCapacity)) {
             return false;
         }
-        if (!Objects.equals(this.description, other.description)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.description, other.description);
     }
-    
 }

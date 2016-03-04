@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 /**
  *
- * @author starleneowen
+ * @author aaronrose
  */
 public class StartProgramView {
 
@@ -118,8 +118,13 @@ public class StartProgramView {
                           );         
         
         // Create MainMenuView object
-        MainMenuView mainMenuView = new MainMenuView()
+        MainMenuView mainMenuView = new MainMenuView();
                 
         // Display the main menu view
         mainMenuView.displayMainMenuView();
     }
+
+    private void displayNextView() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}

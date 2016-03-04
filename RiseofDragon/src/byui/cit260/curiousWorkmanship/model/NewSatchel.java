@@ -66,10 +66,7 @@ public class NewSatchel implements Serializable {
         if (Double.doubleToLongBits(this.maxWeight) != Double.doubleToLongBits(other.maxWeight)) {
             return false;
         }
-        if (!Objects.equals(this.maxWeight, other.maxWeight)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.maxWeight, other.maxWeight);
     }
     
 }

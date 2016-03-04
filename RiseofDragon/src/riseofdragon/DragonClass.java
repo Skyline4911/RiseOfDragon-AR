@@ -5,7 +5,7 @@
  */
 package riseofdragon;
 
-import byui.cit260.curiousWorkmanship.model.Map;
+import byui.cit260.curiousWorkmanship.control.Dragon;
 
 /**
  *

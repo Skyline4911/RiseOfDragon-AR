@@ -5,6 +5,7 @@
  */
 package byui.cit260.curiousWorkmanship.model;
 
+import byui.cit260.curiousWorkmanship.control.Map;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -17,6 +18,7 @@ public class NewMap implements Serializable {
     //class instance variables
     private String rowCount;
     private double bestTime;
+    private double columnCount;
 
     public NewMap() {
     }
@@ -27,6 +29,7 @@ public class NewMap implements Serializable {
     }
 
     public double getColumnCount() {
+        double columnCount = 0;
         return columnCount;
     }
 
@@ -66,10 +69,6 @@ public class NewMap implements Serializable {
         if (Double.doubleToLongBits(this.columnCount) != Double.doubleToLongBits(other.columnCount)) {
             return false;
         }
-        if (!Objects.equals(this.rowCount, other.rowCount)) {
-            return false;
-        }
-        return true;
+        return Objects.equals(this.rowCount, other.rowCount);
     }
-    
 }

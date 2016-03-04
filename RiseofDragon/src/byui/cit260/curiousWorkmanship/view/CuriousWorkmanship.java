@@ -9,7 +9,7 @@ import byui.cit260.curiousWorkmanship.model.Player;
 
 /**
  *
- * @author starleneowen
+ * @author aaronrose
  */
 public class CuriousWorkmanship {
 

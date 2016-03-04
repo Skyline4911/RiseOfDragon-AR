@@ -66,10 +66,6 @@ public class NewGame implements Serializable {
         if (Double.doubleToLongBits(this.noPeople) != Double.doubleToLongBits(other.noPeople)) {
             return false;
         }
-        if (!Objects.equals(this.totalTime, other.totalTime)) {
-            return false;
-        }
-        return true;
-    }
-    
+        return Objects.equals(this.totalTime, other.totalTime);
+    } 
 }

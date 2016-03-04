@@ -9,7 +9,7 @@ import byui.cit260.curiousWorkmanship.model.Player;
 
 /**
  *
- * @author starleneowen
+ * @author aaronrose
  */
 class GameControl {
         
@@ -26,22 +26,4 @@ class GameControl {
             
             return player;
         }
-       
-    }
-    
-    private boolean doAction(String playersName) {
-        
-        // if the length of the playersName < 2 then
-            // display "Invalid name: The name must be > 1 character"
-            // return false
-            
-        // create Player with specified name
-        // if unsuccessful then
-            // display "Invalid name: The name is too short"
-            // return false
-            
-        // display customized welcome message
-        // display mainMenuView
-        // return true
-    }
 }

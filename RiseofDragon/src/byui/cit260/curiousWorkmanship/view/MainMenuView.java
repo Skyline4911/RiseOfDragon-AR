@@ -10,7 +10,7 @@ import static com.sun.java.accessibility.util.EventID.MENU;
 
 /**
  *
- * @author starleneowen
+ * @author aaronrose
  */
 class MainMenuView {
     
@@ -30,11 +30,15 @@ class MainMenuView {
         MainMenuView mainMenuView = new MainMenuView();
         
         // Display the main menu view
-        mainMenuView.displayMainMenuView();
+        mainMenuView.display();
     }
-    public class MainMenuView {
+    private void display() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    public class mainMenuView extends View {
         
-        private final String Menu = "\n"
+        public mainMenuView() {
+            super("\n"
                 + "\n-----------------------------------"
                 + "\n| Main Menu                       |"
                 + "\nN - Start game"
@@ -42,8 +46,8 @@ class MainMenuView {
                 + "\nG - Get and start existing game"
                 + "\nS - Save game"
                 + "\nE - Exit"
-                + "\n-----------------------------------";
-        
+                + "\n-----------------------------------");
+        }
         public void displayManu() {
             char selection = ' ';
             do {
@@ -83,7 +87,7 @@ class MainMenuView {
                     break;               
             }
         }
-        private void startNewGame() {
+        private void startNewGame() { 
             System.out.println("*** startNewGame function called ***");
         }
         private void startExistingGame() {
@@ -96,13 +100,26 @@ class MainMenuView {
             System.out.println("*** displayHelpMenu function called ***");
         }
 
-        private String getInput() {
+        @Override
+        public void display() {
             throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
         }
+
+        @Override
+        public String getInput() {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        @Override
+        public boolean doAction(String value) {
+            throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        }
+
+        
     }
     public class GameControl {
         
-        public static void createNewGame(Player player) {
+        public void createNewGame(Player player) {
             System.out.println("\n*** createNewGame stub function called ***");
         }
     public class GameMenuView {

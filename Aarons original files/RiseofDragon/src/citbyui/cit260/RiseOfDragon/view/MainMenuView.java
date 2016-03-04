@@ -10,7 +10,7 @@ import static com.sun.java.accessibility.util.EventID.MENU;
 
 /**
  *
- * @author starleneowen
+ * @author robertaustin
  */
 class MainMenuView {
     
@@ -32,9 +32,15 @@ class MainMenuView {
         // Display the main menu view
         mainMenuView.displayMainMenuView();
     }
-    public class MainMenuView {
-        
-        private final String Menu = "\n"
+
+    @Override
+    public boolean doAction(String value) {
+    
+        value = value.toUpperCase(); // convert to all upper case
+    public class MainMenuView extends View {
+
+        public MainMenuView()
+            super("\n"
                 + "\n-----------------------------------"
                 + "\n| Main Menu                       |"
                 + "\nN - Start game"
@@ -42,9 +48,9 @@ class MainMenuView {
                 + "\nG - Get and start existing game"
                 + "\nS - Save game"
                 + "\nE - Exit"
-                + "\n-----------------------------------";
+                + "\n-----------------------------------");
         
-        public void displayManu() {
+       public void displayManu() {
             char selection = ' ';
             do {
                 

@@ -5,6 +5,7 @@
  */
 package byui.cit260.curiousWorkmanship.model;
 
+import byui.cit260.curiousWorkmanship.control.Inventory;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -66,10 +67,6 @@ public class NewInventory implements Serializable {
         if (Double.doubleToLongBits(this.requiredAmount) != Double.doubleToLongBits(other.requiredAmount)) {
             return false;
         }
-        if (!Objects.equals(this.inventoryType, other.inventoryType)) {
-            return false;
-        }
-        return true;
-    }
-    
+        return Objects.equals(this.inventoryType, other.inventoryType);
+    }  
 }
