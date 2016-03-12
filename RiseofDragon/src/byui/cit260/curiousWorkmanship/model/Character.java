@@ -6,71 +6,43 @@
 package byui.cit260.curiousWorkmanship.model;
 
 import java.io.Serializable;
-import java.util.Objects;
 
 /**
  *
  * @author aaronrose
  */
-public class Character implements Serializable {
+public enum Character implements Serializable {
     
-    // class instance variables
-    private String name;
-    private double bestTime;
-
-    public Character() {
-    }
-
+    Frodo("He is the keeper of the key."),
+    Sam("He is Frodo's guardian."),
+    Aragon("He is the king of the land."),
+    Legolas("He is the best warrior the world."),
+    Gimly("He is an apprentice to Legolas."),
+    Gandolf("He is the white wizard."),
+    Rey("She is the garbage collector."),
     
-    public String getName() {
-        return name;
-    }
+    private final String bestTime;
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    Character(String description) {
+    }   this.bestTime = bestTime;
 
-    public double getBestTime() {
+    public String getBestTime() {
         return bestTime;
     }
+    
+    public character getCharacter() {
+        return character;
+}
 
-    public void setBestTime(double bestTime) {
-        this.bestTime = bestTime;
-    }
-
-    @Override
-    public int hashCode() {
-        int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.name);
-        hash = 47 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
-        return hash;
-    }
-
+    public void setCharacter(Character character) {
+        this.character = character;
+}
+    public InventoryItem[] getInventory() {
+        return inventory;
+}
     @Override
     public String toString() {
         return "Character{" + "name=" + name + ", bestTime=" + bestTime + '}';
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Character other = (Character) obj;
-        if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        return true;
-    }
-    
-    
+   
 }

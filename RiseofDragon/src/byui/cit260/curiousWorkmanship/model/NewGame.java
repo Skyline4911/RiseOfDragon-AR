@@ -5,6 +5,7 @@
  */
 package byui.cit260.curiousWorkmanship.model;
 
+import byui.cit260.curiousWorkmanship.control.Dragon;
 import java.io.Serializable;
 import java.util.Objects;
 
@@ -18,6 +19,12 @@ public class NewGame implements Serializable {
     private String totalTime;
     private double noPeople;
 
+    private Character character;
+    private InventoryItem[] inventory;
+    private Satchel satchel;
+    private Dragon dragon;
+    private Map map;
+    
     public NewGame() {
     }
 

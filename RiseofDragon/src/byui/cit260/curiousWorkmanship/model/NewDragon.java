@@ -22,6 +22,12 @@ public class NewDragon implements Serializable {
     private double requiredAmount;
 
     public NewDragon() {
+        this.description = "\nThis is the this of curious workmanship. If you"
+                        + "\nhave faith, it will take you to the promised land";
+        this.maxCapacity = 0;
+        this.inventoryType = 0;
+        this.requiredAmount = 0;
+               
     }
 
     

@@ -88,7 +88,13 @@ class MainMenuView {
             }
         }
         private void startNewGame() { 
+            // create a new game
+            GameControl.createNewGame(CuriousWorkmanship.getPlayer());
             System.out.println("*** startNewGame function called ***");
+            
+            // display a game menu
+            GameMenuView gameMenu = new GameMenuView();
+            gameMenu.dispay();
         }
         private void startExistingGame() {
             System.out.println("*** startExistingGame function called ***");
@@ -98,6 +104,9 @@ class MainMenuView {
         }
         private void displayHelpMenu() {
             System.out.println("*** displayHelpMenu function called ***");
+        }
+        public void displayMap() {
+            System.out.println("*** displayMap stub function called ***");
         }
 
         @Override

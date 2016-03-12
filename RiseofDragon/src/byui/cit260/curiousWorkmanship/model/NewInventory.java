@@ -18,7 +18,7 @@ public class NewInventory implements Serializable {
     //class instance variables
     private String inventoryType;
     private double requiredAmount;
-
+ 
     public NewInventory() {
     }
 

@@ -34,6 +34,12 @@ public class CuriousWorkmanship {
     public static void setPlayer(Player player) {
         CuriousWorkmanship.player = player;
     }
+
+    static class setCurrentGame {
+
+        public setCurrentGame() {
+        }
+    }
     
     
 }

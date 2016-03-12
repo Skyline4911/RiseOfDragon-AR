@@ -6,7 +6,10 @@
 package byui.cit260.curiousWorkmanship.model;
 
 import java.io.Serializable;
+import java.util.ArrayList;
 import java.util.Objects;
+import javafx.scene.Scene;
+import javax.xml.stream.events.Characters;
 
 /**
  *
@@ -17,7 +20,9 @@ public class Location implements Serializable {
     // class instance variables
     private String name;
     private double bestTime;
-
+    private Scene scene;
+    private ArrayList<Characters> characters;
+    
     public Location() {
     }
 
@@ -70,6 +75,18 @@ public class Location implements Serializable {
             return false;
         }
         return true;
+    }
+
+    void setColumn(int column) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setRow(int row) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void setVisited(boolean b) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     

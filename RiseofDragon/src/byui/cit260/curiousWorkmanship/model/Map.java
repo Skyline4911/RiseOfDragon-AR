@@ -5,6 +5,8 @@
  */
 package byui.cit260.curiousWorkmanship.model;
 
+import byui.cit260.curiousWorkmanship.view.Locations;
+
 /**
  *
  * @author starleneowen
@@ -16,6 +18,10 @@ public class Map {
     }
 
     public void setBestTime(double d) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Locations[][] getLocations() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     

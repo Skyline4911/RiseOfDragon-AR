@@ -15,14 +15,16 @@ import java.util.Objects;
 public class NewSatchel implements Serializable {
     
     //class instance variables
-    private String diameter;
+    private double diameter;
     private double maxWeight;
 
     public NewSatchel() {
+        this.diameter = 10;
+        this.maxWeight = 50;
     }
 
     
-    public String getDiameter() {
+    public double getDiameter() {
         return diameter;
     }
 
@@ -30,7 +32,7 @@ public class NewSatchel implements Serializable {
         return maxWeight;
     }
 
-    public void setDiameter(String diameter) {
+    public void setDiameter() {
         this.diameter = diameter;
     }
 

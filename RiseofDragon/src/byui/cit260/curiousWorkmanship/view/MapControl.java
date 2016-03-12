@@ -3,20 +3,24 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.control;
+package byui.cit260.curiousWorkmanship.view;
+
+import byui.cit260.curiousWorkmanship.model.Map;
 
 /**
  *
  * @author starleneowen
  */
-public class Map {
+class MapControl {
 
-    public double columnCount;
-    public Object rowCount;
-
-    Map(int i, int i0) {
+    static Map createMap() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-    
+
+    static class moveCharactersToStartingLocation {
+
+        public moveCharactersToStartingLocation() {
+        }
+    }
     
 }
