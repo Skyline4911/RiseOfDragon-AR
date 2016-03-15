@@ -26,6 +26,28 @@ public class NewClass {
        System.out.println(inventoryInfo);
        
     }
+
+public void doAction(char choice){
+
+    switch (choice) {
+        case 'A': // add item
+            this.addNewItem();
+            break;
+        case 'R': // remove item
+            this.removeItem
+            break;
+        case 'S': // store item
+            this.storeItem
+            break;
+        case 'E': // Exit Inventory
+            this.exitInventory
+            break;
+        default:
+            System.out.printlm(\n*** Invalid selection *** Try again");
+            break;
+        }
+
+    }
     
 }
 
