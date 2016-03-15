@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author starleneowen
+ * @author robertaustin
  */
 public class Cave implements Serializable {
     
@@ -38,39 +38,13 @@ public class Cave implements Serializable {
         this.bestTime = bestTime;
     }
 
-    @Override
-    public int hashCode() {
-        int hash = 3;
-        hash = 97 * hash + Objects.hashCode(this.name);
-        hash = 97 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
-        return hash;
+    public enum Item {
+        scales,
+        staff,
+        magic,
+        sword,
+        gold,
+        diamond,
+        water,
+        claws;
     }
-
-    @Override
-    public String toString() {
-        return "Cave{" + "name=" + name + ", bestTime=" + bestTime + '}';
-    }
-    
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null) {
-            return false;
-        }
-        if (getClass() != obj.getClass()) {
-            return false;
-        }
-        final Cave other = (Cave) obj;
-        if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
-            return false;
-        }
-        if (!Objects.equals(this.name, other.name)) {
-            return false;
-        }
-        return true;
-    }
-    
-    
-}
