@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author starleneowen
+ * @author robertaustin
  */
 public class Training implements Serializable {
     
@@ -73,6 +73,17 @@ public class Training implements Serializable {
         return true;
     }
     
+        public class TrainingScene {
+        // Training Scene
+        Training training = new Training(10, 10);
+        
+        // list of scenes in the cave
+        Scene[] scenes = createScenes();
+
+        // assign scenes to cave
+        assignScenesToLocations(cave, scenes);
     
-    
+        return training;
+    }
 }
+
