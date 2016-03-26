@@ -44,5 +44,19 @@ class Game {
         // display mainMenuView
         // return true
     }
+	
+	private void displayBanner() {
+        
+    this.console.println(
+        + "\n**********************************************"
+        + "\n*                                            *"
+        + "\n* This is not the file you're looking        *"
+        + "\n* for...                                     *"
+		+ "\n*                                            *"
+        + "\n* Your game can be found in slot B,          *"
+        + "\n* C, or D.                                   *"
+		+ "\n*                                            *"
+        + "\n**********************************************"
+        );
+    }
 }
-
