@@ -3,14 +3,14 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package citbyui.cit260.RiseOfDragon.view;
+package byui.cit260.curiousWorkmanship.view;
 
 import byui.cit260.curiousWorkmanship.model.Player;
 import java.util.Scanner;
 
 /**
  *
- * @author starleneowen
+ * @author aaronrose
  */
 public class StartProgramView {
 
@@ -25,7 +25,7 @@ public class StartProgramView {
 
     private void displayBanner() {
         
-        System.out.println(
+        this.console.println(
             "\n**********************************************"
           + "\n*                                            *"
           + "\n* This is the game Rise of the Dragon        *"
@@ -65,18 +65,18 @@ public class StartProgramView {
 
     private String getPlayersName() {
         
-        Scanner keyboard = new Scanner(System.in); // get infile for keyboard
+
         String value = ""; // value to be returned
         boolean valid = false; // initialize to not valid
         
         while (!valid) { // loop while an invalid value is enter
-            System.out.println("\n" + this.promptMessage);
+            this.console.println("\n" + this.promptMessage);
             
-            value = keyboard.nextLine(); //get next line typed on keyboard
+            value = keyboard.readLine(); //get next line typed on keyboard
             value = value.trim(); // trim off leading and trailing blanks
             
             if (value.length() < 1) { // value is blank
-                System.out.println("\nInvalid value: value can not be blank");
+                this.console.println("\nInvalid value: value can not be blank");
                 continue;
             }
             
@@ -89,7 +89,7 @@ public class StartProgramView {
     private boolean doAction(String playersName) {
         
         if (playersName.length() < 2) {
-        System.out.println("\nInvalid players name: "
+        this.console.println("\nInvalid players name: "
                 + "The name must be greater than one character in length");
             return false;
     }
@@ -98,7 +98,8 @@ public class StartProgramView {
         Player player = GameControl.createPlayer(playersName);
         
         if (player == null) { // if unsuccessful
-            System.out.println("\nError creating the player.");
+            ErrorView.display(this.getClass().getName(),
+                    "You must enter a value.");
             return false;
         }
         
@@ -111,15 +112,24 @@ public class StartProgramView {
     private void displayNextView(Player player) {
         
         //display a custom welcome message
-        System.out.println("\n===================================="
+        this.console.println("\n===================================="
                           + "\n Welcome to the game " + player.getName()
                           + "\n We hope you have a lot of fun!"
                           + "\n===================================="
                           );         
         
         // Create MainMenuView object
-        MainMenuView mainMenuView = new MainMenuView()
+        MainMenuView mainMenuView = new MainMenuView();
                 
-        // Display 
-        mainMenuView.display();
+        // Display the main menu view
+        mainMenuView.displayMainMenuView();
     }
+
+    private void displayNextView() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void display() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+}
