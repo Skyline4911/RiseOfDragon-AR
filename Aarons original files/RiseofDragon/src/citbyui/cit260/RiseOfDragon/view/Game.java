@@ -7,8 +7,18 @@ package citbyui.cit260.RiseOfDragon.view;
 
 /**
  *
- * @author starleneowen
+ * @author RobertAustin
  */
-class Game {
+        public game() {
+            super("\n"
+                + "\n-----------------------------------"
+                + "\n| Game                            |"
+                + "\nN - save game slot A"
+                + "\nH - save game slot B"
+                + "\nG - save game slot C"
+                + "\nS - Save game slot D"
+                + "\nE - Exit"
+                + "\n-----------------------------------");
+        }
     
 }
