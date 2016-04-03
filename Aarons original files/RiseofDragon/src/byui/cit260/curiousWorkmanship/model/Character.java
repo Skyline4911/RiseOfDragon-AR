@@ -10,7 +10,7 @@ import java.util.Objects;
 
 /**
  *
- * @author aaronrose
+ * @author aaronrose.
  */
 public class Character implements Serializable {
     
