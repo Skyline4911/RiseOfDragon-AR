@@ -5,7 +5,7 @@
  */
 package citbyui.cit260.RiseOfDragon.view;
 
-import byui.cit260.curiousWorkmanship.model.Player;
+import byui.cit260.RiseOfDragon.model.Player;
 
 /**
  *
