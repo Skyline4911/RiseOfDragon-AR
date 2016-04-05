@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.view;
+package byui.cit260.RiseOfDragon.view;
 
-import byui.cit260.curiousWorkmanship.model.Player;
+import byui.cit260.RiseOfDragon.model.Player;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -100,7 +100,7 @@ public class CuriousWorkmanship {
      *
      * @param game
      */
-    public static void setGame(citbyui.cit260.RiseOfDragon.view.Game game) {
+    public static void setGame(byui.cit260.RiseOfDragon.view.Game game) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     private Object console;

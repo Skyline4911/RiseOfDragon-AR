@@ -3,22 +3,23 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.model;
+package byui.cit260.RiseOfDragon.model;
 
 import java.io.Serializable;
 import java.util.Objects;
 
 /**
  *
- * @author robertaustin
+ * @author aaronrose
  */
-public class NewPlayer implements Serializable {
+public class Player implements Serializable {
     
+   
     //class instance variables
-    private String name;
-    private double bestTime;
+    String name;
+    double bestTime;
 
-    public NewPlayer() {
+    public Player() {
     }
 
     

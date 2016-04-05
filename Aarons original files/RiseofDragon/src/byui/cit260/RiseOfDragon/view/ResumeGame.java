@@ -3,9 +3,10 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package citbyui.cit260.RiseOfDragon.view;
+package byui.cit260.RiseOfDragon.view;
 
 import byui.cit260.curiousWorkmanship.model.Player;
+import citbyui.cit260.RiseOfDragon.view.CuriousWorkmanship;
 
 /**
  *

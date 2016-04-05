@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.view;
+package byui.cit260.RiseOfDragon.view;
 
 import byui.cit260.curiousWorkmanship.control.Dragon;
 import byui.cit260.curiousWorkmanship.control.InventoryItem;
 import byui.cit260.curiousWorkmanship.model.Map;
-import byui.cit260.curiousWorkmanship.model.Player;
+import byui.cit260.RiseOfDragon.model.Player;
 import javafx.scene.Scene;
 
 /**

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.model;
+package byui.cit260.RiseOfDragon.model;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -12,13 +12,13 @@ import java.util.Objects;
  *
  * @author robertaustin
  */
-public class Character implements Serializable {
+public class Location implements Serializable {
     
     // class instance variables
     private String name;
     private double bestTime;
 
-    public Character() {
+    public Location() {
     }
 
     
@@ -41,14 +41,14 @@ public class Character implements Serializable {
     @Override
     public int hashCode() {
         int hash = 7;
-        hash = 47 * hash + Objects.hashCode(this.name);
-        hash = 47 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
+        hash = 17 * hash + Objects.hashCode(this.name);
+        hash = 17 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
         return hash;
     }
 
     @Override
     public String toString() {
-        return "Character{" + "name=" + name + ", bestTime=" + bestTime + '}';
+        return "Location{" + "name=" + name + ", bestTime=" + bestTime + '}';
     }
 
     @Override
@@ -62,7 +62,7 @@ public class Character implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Character other = (Character) obj;
+        final Location other = (Location) obj;
         if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
             return false;
         }

@@ -4,9 +4,9 @@
  * and open the template in the editor.
  */
 
-package citbyui.cit260.RiseOfDragon.view;
+package byui.cit260.RiseOfDragon.view;
 
-import byui.cit260.curiousWorkmanship.model.Player;
+import byui.cit260.RiseOfDragon.model.Player;
 import static com.sun.java.accessibility.util.EventID.MENU;
 
 /**

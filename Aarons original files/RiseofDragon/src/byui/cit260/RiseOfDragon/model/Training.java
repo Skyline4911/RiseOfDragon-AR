@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package byui.cit260.curiousWorkmanship.model;
+package byui.cit260.RiseOfDragon.model;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -12,13 +12,13 @@ import java.util.Objects;
  *
  * @author robertaustin
  */
-public class Landscape implements Serializable {
+public class Training implements Serializable {
     
     // class instance variables
     private String name;
     private double bestTime;
 
-    public Landscape() {
+    public Training() {
     }
 
     
@@ -40,17 +40,18 @@ public class Landscape implements Serializable {
 
     @Override
     public int hashCode() {
-        int hash = 5;
-        hash = 47 * hash + Objects.hashCode(this.name);
-        hash = 47 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
+        int hash = 7;
+        hash = 53 * hash + Objects.hashCode(this.name);
+        hash = 53 * hash + (int) (Double.doubleToLongBits(this.bestTime) ^ (Double.doubleToLongBits(this.bestTime) >>> 32));
         return hash;
     }
 
     @Override
     public String toString() {
-        return "Landscape{" + "name=" + name + ", bestTime=" + bestTime + '}';
+        return "Training{" + "name=" + name + ", bestTime=" + bestTime + '}';
     }
 
+    
     @Override
     public boolean equals(Object obj) {
         if (this == obj) {
@@ -62,7 +63,7 @@ public class Landscape implements Serializable {
         if (getClass() != obj.getClass()) {
             return false;
         }
-        final Landscape other = (Landscape) obj;
+        final Training other = (Training) obj;
         if (Double.doubleToLongBits(this.bestTime) != Double.doubleToLongBits(other.bestTime)) {
             return false;
         }
@@ -72,5 +73,17 @@ public class Landscape implements Serializable {
         return true;
     }
     
+        public class TrainingScene {
+        // Training Scene
+        Training training = new Training(10, 10);
+        
+        // list of scenes in the cave
+        Scene[] scenes = createScenes();
+
+        // assign scenes to cave
+        assignScenesToLocations(cave, scenes);
     
+        return training;
+    }
 }
+
